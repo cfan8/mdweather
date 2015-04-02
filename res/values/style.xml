@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<!-- Base Theme -->
+	<style name="TgfcThemeBase" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/tgred</item>
+		<item name="colorPrimaryDark">@color/tgreddark</item>
+		<item name="colorAccent">@color/tgbluelight</item>
+		<item name="android:textColorPrimary">@color/white</item>
+		<item name="windowActionBar">false</item>
+
+		<item name="themeColorPrimary">@color/tgred</item>
+		<item name="themeColorPrimaryLight">@color/tgredlight</item>
+		<item name="themeColorPrimaryDark">@color/tgreddark</item>
+		<item name="themeColorPrimaryContrast">@color/tgbluelight</item>
+		<item name="themeColorMainText">@color/deepgray</item>
+		<item name="themeColorMainTextBackground">@color/white</item>
+		<item name="themeColorAnnotationText">@color/midgray</item>
+		<item name="themeColorDivider">@color/lightgray</item>
+
+
+		<item name="windowActionBarOverlay">true</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="actionModeBackground">?attr/themeColorPrimary </item>
+
+	</style>
+
+	<style name="TgfcThemeBase.Activity">
+		<item name="android:background">@color/white</item>
+	</style>
+
+	<style name="TgfcThemeBase.Drawer">
+	</style>
+
+	<style name="TgfcThemeBase.ActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<item name="popupTheme">@style/TgfcThemeBase.PopupMenu</item>
+	</style>
+
+
+	<style name="TgfcThemeBase.PopupMenu" parent="@style/ThemeOverlay.AppCompat.Light">
+		<!--
+		<item name="android:background">@color/tgred</item>
+		-->
+	</style>
+
+	<style name="TgfcThemeBase.Settings" parent="TgfcTheme">
+	</style>
+
+	<style name="TgfcTheme.DarkText" parent="TgfcTheme">
+		<item name="android:textColor">@color/deepgray</item>
+	</style>
+
+	<!-- General Theme For Lower API Devices -->
+	<style name="TgfcTheme" parent="@style/TgfcThemeBase">
+	</style>
+
+	<style name="TgfcTheme.Activity" parent="TgfcThemeBase.Activity">
+	</style>
+
+	<style name="TgfcTheme.Drawer" parent="TgfcThemeBase.Drawer">
+	</style>
+
+	<style name="TgfcTheme.Drawer.CaptionText" parent="Base.TextAppearance.AppCompat.Small">
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginTop">20dp</item>
+		<item name="android:layout_marginBottom">20dp</item>
+	</style>
+
+	<style name="TgfcTheme.Drawer.BorderlessButton">
+		<item name="android:imageButtonStyle">?android:borderlessButtonStyle</item>
+		<item name="android:buttonStyle">?android:borderlessButtonStyle</item>
+	</style>
+
+	<style name="TgfcTheme.ForumList">
+	</style>
+
+	<style name="TgfcTheme.ContentList">
+	</style>
+
+	<style name="TgfcTheme.ContentList.MainText">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/deepgray</item>
+	</style>
+
+	<style name="TgfcTheme.ContentList.QuoteText">
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">?attr/themeColorAnnotationText</item>
+	</style>
+
+	<style name="TgfcTheme.ForumList.Title">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/deepgray</item>
+	</style>
+
+
+	<style name="TgfcTheme.ForumList.Info">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">?attr/themeColorAnnotationText</item>
+	</style>
+
+	<style name="TgfcTheme.ActionBar" parent="TgfcThemeBase.ActionBar">
+
+	</style>
+
+	<style name="TgfcTheme.ImageButton" parent="TgfcTheme">
+		<item name="android:width">36dp</item>
+		<item name="android:height">36dp</item>
+		<item name="android:scaleType">fitCenter</item>
+		<item name="android:padding">6dp</item>
+		<item name="android:layout_marginRight">12dp</item>
+	</style>
+
+	<style name="TgfcTheme.ImageButton.Small" parent="TgfcTheme.ImageButton">
+		<item name="android:width">36dp</item>
+		<item name="android:height">36dp</item>
+		<item name="android:padding">10dp</item>
+	</style>
+
+	<style name="TgfcTheme.Settings" parent="TgfcThemeBase.Settings">
+
+	</style>
+</resources>

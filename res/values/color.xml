@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="themeColor">@color/tgred</color>
+
+
+
+
+	<color name="tgred">#CA2A20</color>
+	<color name="tgreddark">#8D1D16</color>
+	<color name="tgredlight">#DA6A63</color>
+	<color name="tgbluelight">#5C85FF</color>
+	<color name="white">#FFFFFF</color>
+	<color name="deepgray">#222222</color>
+	<color name="midgray">#888888</color>
+	<color name="lightgray">#DDDDDD</color>
+	<color name="verylightgray">#EEEEEE</color>
+	<color name="transparent">#00000000</color>
+
+
+	<color name="googleblue">#0266C8</color>
+	<color name="googlered">#F90101</color>
+	<color name="googleyellow">#F2B50F</color>
+	<color name="googlegreen">#00933B</color>
+</resources>

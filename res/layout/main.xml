@@ -1,14 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
 			  android:orientation="vertical"
-			  android:layout_width="fill_parent"
-			  android:layout_height="fill_parent"
 		>
 
-	<TextView
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:text="Hello World, MainActivity"
-			/>
+	<android.support.v4.widget.DrawerLayout
+			android:orientation="vertical"
+			android:id="@+id/main_drawer"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			style="@style/TgfcTheme.Drawer"
+			>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fitsSystemWindows="true"
+				android:orientation="vertical"
+				android:background="?attr/themeColorPrimary"
+				>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+					android:id="@+id/activity_main"
+					android:orientation="vertical"
+					>
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="304dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="left|start"
+				android:background="@color/white"
+				android:orientation="vertical"
+				android:id="@+id/main_drawer_content_layout"
+				>
+
+			<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/main_drawer_login_panel"
+					>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Citiesssss"
+						android:textColor="@color/deepgray"
+						android:id="@+id/main_header"
+						/>
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/ic_gps_fixed_grey600_24dp"
+						android:id="@+id/main_locate_gps_icon"
+						android:layout_below="@id/main_header"
+						/>
+
+				<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/main_locate_gps_icon"
+						android:layout_alignTop="@id/main_locate_gps_icon"
+						android:textColor="@color/deepgray"
+						android:text="Locate"
+						>
+				</Button>
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/ic_add_grey600_24dp"
+						android:id="@+id/main_add_city_icon"
+						android:layout_below="@id/main_locate_gps_icon"
+						/>
+
+				<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Add City"
+						android:layout_toRightOf="@id/main_add_city_icon"
+						android:layout_alignTop="@id/main_add_city_icon"
+						android:textColor="@color/deepgray"
+						>
+				</Button>
+
+
+				<ScrollView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:id="@+id/main_city_list"
+						>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							>
+
+
+					</LinearLayout>
+
+
+				</ScrollView>
+
+
+			</RelativeLayout>
+
+
+		</LinearLayout>
+
+	</android.support.v4.widget.DrawerLayout>
 </LinearLayout>
+
+
+
 
